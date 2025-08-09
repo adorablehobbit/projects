@@ -116,8 +116,10 @@ document.addEventListener("keydown", event => {
         positionCircleOverKey(`'Key`);
     }else if(word.textContent[0] == '<'){
         positionCircleOverKey(`,Key`);
+    }else if(word.textContent[0] == '.'){
+        positionCircleOverKey(`periodKey`);
     }else if(word.textContent[0] == '>'){
-        positionCircleOverKey(`.Key`);
+        positionCircleOverKey(`periodKey`);
     }else if(word.textContent[0] == '?'){
         positionCircleOverKey(`/Key`);
     }else{
@@ -215,7 +217,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }else if(word.textContent[0] == '<'){
         positionCircleOverKey(`,Key`);
     }else if(word.textContent[0] == '>'){
-        positionCircleOverKey(`.Key`);
+        positionCircleOverKey(`periodKey`);
+    }else if(word.textContent[0] == '.'){
+        positionCircleOverKey(`periodKey`);
     }else if(word.textContent[0] == '?'){
         positionCircleOverKey(`/Key`);
     }else{
@@ -294,8 +298,10 @@ keyboardContainer.addEventListener("click", (event) => {
         positionCircleOverKey(`'Key`);
     }else if(word.textContent[0] == '<'){
         positionCircleOverKey(`,Key`);
+    }else if(word.textContent[0] == '.'){
+        positionCircleOverKey(`periodKey`);
     }else if(word.textContent[0] == '>'){
-        positionCircleOverKey(`.Key`);
+        positionCircleOverKey(`periodKey`);
     }else if(word.textContent[0] == '?'){
         positionCircleOverKey(`/Key`);
     }else{
