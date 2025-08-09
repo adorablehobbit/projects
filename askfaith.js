@@ -6,14 +6,32 @@ word.value = word.textContent;
 let keyboardContainer = document.getElementById('keyboardContainer');
 
 const listOfWords = [
-    "hi sis! my name is jericko, from las pinas sector, nice to meet you :D",
+    "hi sis!", 
+    "i'm jericko", 
+    "from las pinas sector",
+    "nice to meet you :D",
     "(or nice to meet you soon HAHA)", 
-    "let me share a short scripture from Matthew 13:44-46!", 
-    "i love this scripture because it shows the value of heaven", 
-    "like God's love, it far exceeds anything we see on this earth", 
+    "let me share a short scripture from", 
+    "Matthew 13:44-46!", 
+    "i really love this scripture", 
+    "because it shows the incomparable value of heaven", 
+    "like God's love", 
+    "it is far worth it than anything we see on this earth", 
+    "in a world full of different choices", 
+    "God shows us what's worth it :)", 
+    "i hope you were encouraged with the scripture!", 
+    "and sa mini game xd", 
+    "with that,", 
+    "kung free ka lang naman...", 
+    "ay hindi ba", 
+    "joke", 
+    "if ever i could have this opportunity ^^", 
     "that's great!!", 
     "looking forward in spending time and encouraging one another!", 
-    "continue to keep safe and strengthen your relationship with God :-)"];
+    "until then...",
+    "continue in strengthening your relationship with God :-)",
+    "keep safe!"
+];
 
 for(let i = 0; i < listOfWords.length; i++){
     listOfWords[i] = listOfWords[i].toLowerCase().replaceAll(" ", " ৹ ");
@@ -143,9 +161,9 @@ function positionCircleOverKey(specificKey) {
     }else if(currentWord == 1){
         document.querySelector('.button-class').style.display = 'block';
         document.getElementById('short-scripture').style.display = 'none';
-    }else if(currentWord == 4){
+    }else if(currentWord == 7){
         document.getElementById('short-scripture').style.display = 'block';
-    }else if(currentWord == 6 && doneAsk == 0){
+    }else if(currentWord == 21 && doneAsk == 0){
         word.style.display = 'none';
         document.getElementById('ask-segment').style.display = 'flex';
         document.querySelector('.button-class').style.display = 'none';
